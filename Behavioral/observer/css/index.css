@@ -1,0 +1,602 @@
+@font-face {
+font-family: "Lato";
+src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+font-family: "Fredoka One";
+src: url("../fonts/Fredoka_One/FredokaOne-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+font-family: "Kristi";
+src: url("../fonts/Kristi/Kristi-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: scroll;
+    min-width: 960px;
+}
+
+/*--- Header  ---*/
+
+/* 1.Order info  */
+
+header {
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-width: 960px;
+    z-index: 9999;
+}
+
+.content-container {
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.bcg-top {
+    background-color: rgb(51, 51, 51);
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.order-info-wrapper {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    font-family: Lato;
+    max-height: 100%;
+}
+
+.order-info {
+    align-self: center;
+    width: 50%;
+    display: flex;
+
+    justify-content: space-between;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+
+.logo {
+    color: white;
+    position: relative;
+    top: 10px;
+}
+
+.cracker {
+    margin: 0;
+    padding: 0;
+    font-family: Kristi;
+    font-size: 60px;
+}
+
+.logo span:last-child {
+    display: block;
+    text-align: right;
+    position: relative;
+    left: 20px;
+    bottom: 20px;
+    font-size: 18px;
+}
+
+.arrow-down {
+    transform: rotate(45deg);
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3.5px;
+}
+
+.order-info-details .arrow-down {
+    margin-left: 10px;
+}
+
+.order-info-details {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.semen {
+    background-image: url("../img/semen.png");
+    width: 25px;
+    height: 26px;
+}
+
+.item-count {
+    background-color: orangered;
+    display: inline-block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    left: 15px;
+    bottom: 10px;
+}
+
+/* 2.Navigation  */
+
+.bcg {
+    background-color: rgba(51, 51, 51, 0.56);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.24);
+    height: 180px;
+}
+
+.bcg .content-container {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.content-container nav {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    font-family: Fredoka One;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav-list li {
+    margin-left: 15px;
+    padding: 15px 32px;
+}
+
+.active-tab {
+    border-bottom: 5px solid #ff4200;
+}
+
+/*---- main  ----*/
+
+/* 1.description  */
+
+.description {
+    background: url("../img/description_bg.jpg") center no-repeat;
+    background-size: cover;
+    height: 920px;
+}
+
+.fancy-description {
+    position: absolute;
+    background-color: rgba(131, 170, 117, 0.81);
+    top: 250px;
+    width: 44%;
+    height: 360px;
+    min-width: 470px;
+    z-index: 0;
+}
+
+.description-container {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: flex-end;
+    margin-top: 280px;
+}
+
+.description-header {
+    font-family: "Fredoka One";
+    position: relative;
+    /*margin: 310px auto 0 auto;*/
+    z-index: 999;
+    color: rgb(247, 247, 247);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    width: 430px;
+    text-align: center;
+    line-height: 1.25;
+}
+
+.description-header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.description-content {
+    position: relative;
+    z-index: 999;
+    width: 300px;
+    min-width: 300px;
+    text-align: right;
+    font-size: 18px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    line-height: 1.556;
+    height: 240px;
+    display: flex;
+    align-items: flex-end;
+    border-right: 2px solid white;
+    padding-right: 10px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.taste-btn-container {
+    margin-top: 120px;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.btn {
+    background-color: #ff4200;
+    font-size: 36px;
+    font-family: Fredoka One;
+    color: white;
+    padding: 30px 70px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+    letter-spacing: 3px;
+    border: 2px solid #ff4200;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #ff4200;
+}
+
+/* 2.About  */
+
+.about {
+    background: url("../img/about_bg.jpg") center no-repeat;
+    background-size: cover;
+    height: 1280px;
+}
+
+.scatter-bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, .6) 50%, rgba(255, 255, 255, 1) 100%);
+    padding-top: 30px;
+}
+
+.cracker_img {
+    position: absolute;
+
+}
+
+.about-header {
+    font-size: 48px;
+    font-family: Fredoka One;
+    line-height: 1.25;
+    text-transform: uppercase;
+    text-align: right;
+    color: rgb(102, 102, 102);
+    letter-spacing: 10px;
+}
+
+.fancy-about {
+    position: absolute;
+    z-index: 888;
+    background-color: rgb(215, 191, 191);
+    opacity: 0.741;
+    width: 65%;
+    height: 360px;
+    right: 0;
+    top: 190px;
+    padding: 20px 80px;
+    min-width: 700px;
+}
+
+.about-content {
+    position: relative;
+    z-index: 999;
+    font-size: 18px;
+    font-family: "Lato";
+    color: rgb(39, 39, 39);
+    margin-left: auto;
+    margin-top: 110px;
+    padding-right: 80px;
+    line-height: 1.25;
+    width: 620px;
+    height: 240px;
+    text-align: justify;
+
+}
+
+.about-cracker-logo {
+    position: relative;
+    padding-top: 5px;
+    z-index: 999;
+    font-size: 72px;
+    text-align: right;
+}
+
+.cracker-constructor {
+    margin-top: 100px;
+}
+
+.cracker-constructor h1 {
+    font-family: Fredoka One;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: rgb(51, 51, 51);
+    line-height: 1.25;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+/* New order form*/
+
+.constructor-total-order {
+    font-size: 24px;
+    font-family: "Lato";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.cracker-constructor-form input[type='range'] {
+    flex: 1;
+    margin: 0 100px;
+}
+
+.cracker-constructor-form ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.input-custom-range label {
+    font-size: 30px;
+    font-family: "Lato";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+    width: 75px;
+}
+
+.cracker-constructor-form li {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cracker-constructor-form li.package-select-container {
+    justify-content: left;
+}
+
+.custom-select {
+    margin-left: 100px;
+}
+
+.submit-order-container {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-order {
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(255, 66, 0);
+}
+
+.submit-order.large {
+    width: 200px;
+    border-radius: 40px;
+    position: absolute;
+    left: 100%;
+    transition: all .3s;
+}
+
+.submit-order.large.show {
+    left: calc(100% - 200px)
+}
+
+/*--- Footer ---*/
+
+footer {
+    margin-top: 55px;
+    background: url("../img/footer_bg.jpg") center no-repeat;
+    background-size: cover;
+    height: 788px;
+    padding-top: 50px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-wrap {
+    display: flex;
+}
+
+.contact-info {
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+.contact-info > h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "FredokaOne";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.contact-info > p, .share-href {
+    font-size: 14px;
+    font-family: "Lato";
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+    line-height: 1.8;
+}
+
+.share-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.share-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.share-href {
+    margin-top: 0;
+    text-decoration: none;
+}
+
+.img-border {
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+/** Shopping basket **/
+
+.shopping-basket {
+    width: 580px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    color: black;
+    padding: 10px 40px;
+    display: none;
+}
+
+.products-table {
+    text-align: center;
+}
+
+.products-table td:nth-child(-n+5) {
+    color: orange;
+    font-size: 12px;
+}
+
+.products-table td:nth-child(6) {
+    padding-left: 30px;
+}
+
+.checkout-wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.checkout-wrap {
+    font-size: 24px;
+}
+
+.checkout-wrap .total {
+    margin: 0;
+    padding: 0;
+}
+
+.checkout-wrap .total-amount {
+    margin: 0 20px;
+}
+
+.checkout-btn.btn {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    margin-left: 30px;
+}
+
+.products-table-wrap {
+    flex: 1;
+}
+
+.basket-close {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.basket-close:hover {
+    transform: rotate(90deg);
+}
+
+.delete-order {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.active-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

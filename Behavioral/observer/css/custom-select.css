@@ -1,0 +1,82 @@
+
+.custom-select {
+    user-select: none;
+    position: relative;
+}
+
+.selected-options {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 400px;
+    height: 60px;
+    color: rgb(255, 66, 0);
+    font-size: 24px;
+    font-family: Fredoka One;
+    text-transform: uppercase;
+    line-height: 1.667;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid rgb(255, 66, 0);
+    border-radius: 30px;
+    background-color: white;
+}
+
+.custom-select .arrow-down {
+    padding: 6px;
+    border: solid rgb(255, 66, 0);
+    border-width: 0 3px 3px 0;
+    position: absolute;
+    right: 50px;
+    top: 35%
+}
+
+.custom-select .options {
+    border: 1px solid rgb(255, 66, 0);
+    border-radius: 40px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    display: none;
+    background-color: white;
+}
+
+.custom-select .options.active {
+    display: block;
+}
+
+.custom-select ul{
+    list-style: none;
+    padding: 0 50px;
+    margin: 0;
+}
+
+.custom-select li {
+    text-align: center;
+    color: rgb(255, 66, 0);
+    font-size: 24px;
+    font-family: Fredoka One;
+    text-transform: uppercase;
+    line-height: 1.667;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(255, 66, 0);
+}
+
+.custom-select li.disabled  {
+    cursor: auto;
+    color: grey;
+}
+
+.custom-select li:last-child {
+    border-bottom: none;
+}
+
+.custom-select li:hover:not(.disabled) {
+    opacity: .7;
+}
+

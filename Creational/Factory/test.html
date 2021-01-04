@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./loadingWheel.css">
+    <script src="Filter.js"></script>
+</head>
+
+<body>
+
+<div class="filter-content">
+    <label for="in1">IN1:</label>
+    <div id="parentNode1" class="filter-content">
+        <input id="in1" name="in1">
+    </div>
+</div>
+
+<br>
+
+<label for="in2">IN2:</label>
+<div id="parentNode2" class="filter-content">
+    <input id="in2" name="in2">
+</div>
+
+<p>Id: </p>
+<div id='showId'></div>
+
+<br>
+
+
+<br>
+
+
+<div id="parentNode5" class="filter-content">
+    <label for="in5">Клиент:</label>
+    <input id="in5" name="in5" >
+</div>
+
+<br>
+
+<label for="in6">Счета кликнта:</label>
+<div id="parentNode6" class="filter-content">
+    <input id="in6" name="in6" >
+</div>
+
+<br>
+
+<script>
+
+    const options1 = {
+        parent: document.getElementById('parentNode1'),
+        delay: 100,
+        cb: function (id) {
+            document.getElementById('showId').innerHTML = id;
+        },
+        startWithOnly: false,
+        countOfSymbol: 0,
+        input: in1,
+        //width: 200
+        isEmptyShow: true
+    };
+
+    const myFilter1 = createPickList("",options1);
+    myFilter1.setUrl('./notes.json');
+
+    ////////////////////////////////////////////////////
+
+    const options2 = {
+        parent: document.getElementById('parentNode2'),
+        delay: 100,
+        cb: function (id) {
+            document.getElementById('showId').innerHTML = id;
+        },
+        startWithOnly: false,
+        countOfSymbol: 2,
+        input: in2,
+        //width: 200
+    };
+
+    const myFilter2 = createPickList("id", options2);
+    myFilter2.setUrl('./data-double-id.json');
+
+    ////////////////////////////////////////////////////
+
+    const options5 = {
+        parent: document.getElementById('parentNode5'),
+        delay: 100,
+        cb: function (id) {
+            document.getElementById('showId').innerHTML = id;
+        },
+        startWithOnly: false,
+        countOfSymbol: 1,
+        input: in5,
+        //width: 200
+        paramName: "text",
+        indexData: 1
+    };
+    // const myFilter5 =  createPickList('serverId', options5);
+    // myFilter5.setUrl('http://localhost:3000/users');
+    ////////////////////////////////////////////////////
+    const options6 = {
+        parent: document.getElementById('parentNode6'),
+        delay: 100,
+        cb: function (id) {
+            document.getElementById('showId').innerHTML = id;
+        },
+        startWithOnly: false,
+        countOfSymbol: 2,
+        input: in6,
+        //width: 200
+        paramName: "text",
+        indexData: 1,
+        requestDelay: 1000,
+        isEmptyShow: true
+    };
+
+
+    const myFilter6 = createPickList('serverId', options6);
+    myFilter6.setUrl('http://localhost:3000/users');
+
+    const myFilter5 = createPickList('', options5);
+
+    myFilter6.connectItem(myFilter5, "http://localhost:3000/users/test", "text")
+
+
+</script>
+</body>
+</html>

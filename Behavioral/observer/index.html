@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/custom-select.css">
+    <link rel="stylesheet" href="./css/input-range.css">
+</head>
+<body>
+<header>
+    <div class="bcg-top">
+        <div class="content-container order-info-wrapper">
+            <div class="logo">
+                <span class="cracker">Cracker</span>
+                <span>logo</span>
+            </div>
+            <div class="order-info">
+                    <span class="semen">
+                        <span class="item-count">0</span>
+                    </span>
+                <span class="order-info-total"> Total:
+                        <span class="total-price">0</span>
+                </span>
+                <span class="order-info-details">Details
+                        <i class="arrow-down"></i>
+                </span>
+            </div>
+            <div class="shopping-basket">
+                <div class="products-table-wrap">
+                    <table class="products-table" cellspacing="20">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th><img width="30" height="30" src="./img/soybean.png" alt="soybean"></th>
+                            <th><img width="30" height="30" src="./img/sesame.png" alt="sesame"></th>
+                            <th><img width="30" height="30" src="./img/wheat.png" alt="wheat"></th>
+                            <th><img width="30" height="30" src="./img/corn.png" alt="corn"></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    <div class="checkout-wrap">
+            <span class="order-info-total"> Total:
+                <span class="total-price">0</span>
+            </span>
+                        <a href="#" class="checkout-btn btn">checkout</a>
+                    </div>
+                </div>
+                <div>
+                    <p class="basket-close">&times;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bcg">
+        <div class="content-container">
+            <nav>
+                <ul class="nav-list">
+
+                    <li class="active-tab"><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Checkout</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="description">.
+        <div class="fancy-description"></div>
+        <div class="content-container ">
+            <div class="description-container">
+                <div class="description-header">
+                    <h1>
+                        mostly tastes <br>
+                        with freshes
+                    </h1>
+                </div>
+                <p class="description-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. <br>
+                    Lorem ipsum dolor sit amet,
+                </p>
+            </div>
+            <div class="taste-btn-container">
+                <a href="#constructor" class="taste-btn btn">taste it</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="scatter-bg">
+            <div class="fancy-about"></div>
+            <div class="content-container about-container">
+                <img class="cracker_img" src="img/cracker_small.png" alt="cracker">
+                <h1 class="about-header">About Cracker</h1>
+                <p class="about-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla pariatur. Excepteur sint occaecat, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium, architecto beatae vitae dicta sunt explicabo. Neque porro quisquam est, qui dolorem
+                    ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                </p>
+                <div class="cracker about-cracker-logo">Cracker</div>
+                <div class="cracker-constructor" id="constructor">
+                    <h1>Cracker constructor</h1>
+                </div>
+                <form class="cracker-constructor-form">
+                    <p class="constructor-total-order">
+                        Current value: <span class="total-price">0</span>
+                    </p>
+                    <ul class="range-inputs">
+                        <li class="input-custom-range">
+                            <img src="./img/soybean.png" alt="soybean">
+                            <input id="soybean" value="10" name="soybean" type="range" min="0" max="100" step="1">
+                            <label for="soybean" class="range-percent"></label>
+                        </li>
+                        <li class="input-custom-range">
+                            <img src="./img/sesame.png" alt="sesame">
+                            <input id="sesame" class="dark-green-slider" name="sesame" value="90" type="range" min="0"
+                                   max="100" step="1">
+                            <label for="sesame"></label>
+                        </li>
+                        <li class="input-custom-range">
+                            <img src="./img/wheat.png" alt="wheat">
+                            <input id="wheat" class="yellow-slider" name="wheat" value="0" type="range" min="0"
+                                   max="100" step="1">
+                            <label for="wheat" class="range-percent"></label>
+                        </li>
+                        <li class="input-custom-range">
+                            <img src="./img/corn.png" alt="corn">
+                            <input id="corn" class="grey-slider" name="corn" value="0" type="range" min="0" max="100"
+                                   step="1">
+                            <label for="corn" class="range-percent"></label>
+                        </li>
+                        <li class="package-select-container">
+                            <img src="img/package.png" alt="package">
+                            <div class="custom-select">
+                                <div class="options">
+                                    <ul>
+                                        <li class="disabled">Choose your pack</li>
+                                        <li value="small">Small pack</li>
+                                        <li value="medium">Medium pack</li>
+                                        <li value="large">Large pack</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="submit-order-container">
+                        <input class="submit-order" type="submit" value="+" name="submit">
+                        <input class="submit-order large" type="submit" value="Add to card" name="lgsubmit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="content-container">
+        <div class="contacts">
+            <div class="contact-wrap">
+                <img width="30" height="30" src="./img/fa-phone.png" alt="phone">
+                <div class="contact-info">
+                    <h3>Phone</h3>
+                    <p> +43 ( 987 ) 345 - 6782
+                    <p>
+                </div>
+            </div>
+            <div class="contact-wrap">
+                <img width="20" height="30" src="./img/fa-map-marker.png" alt="location">
+                <div class="contact-info">
+                    <h3>Address</h3>
+                    <p>
+                        Cracker Inc.<br>
+                        10 Cloverfield Lane<br>
+                        Berlin, IL 10928<br>
+                        Germany<br>
+                    </p>
+                </div>
+            </div>
+            <div class="contact-wrap">
+                <img width="30" height="30" src="./img/fa-share-alt.png" alt="share">
+                <div class="contact-info">
+                    <h3>Share us</h3>
+                    <ul class="share-list">
+                        <li>
+                            <span class="img-border">
+                                <img width="23" height="30" src="./img/fa-pinterest-p.png" alt="pinterest">
+                            </span>
+                            <a href="https://www.pinterest.com/" class="share-href">https://www.pinterest.com/</a>
+                        </li>
+                        <li>
+                            <span class="img-border">
+                                <img width="16" height="30" src="./img/fa-facebook.png" alt="facebook">
+                            </span>
+                            <a href="https://www.facebook.com/" class="share-href">https://www.facebook.com/</a>
+                        </li>
+                        <li>
+                            <span class="img-border">
+                                <img width="29" height="30" src="./img/fa-google-plus.png" alt="google-plus">
+                            </span>
+                            <a href="https://www.google.com/" class="share-href">https://www.google.com/</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--<p class="total-price"></p>-->
+<script type="module" src="src/index.js"></script>
+
+</body>
+</html>
